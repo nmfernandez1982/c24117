@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- input y labels -->
+
+        <form action="/ingreso" method="post">
+            <br>
+            <label for="nombre">Nombre :</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escriba Aqui Su Nombre"
+            maxlength="15" minlength="2"
+             >
+            
+            <br>
+            <label for="apellido">Apellido :</label>
+            <input class="estiloImput" type="text" id="apellido" name="apellido" required
+            value="Fernandez"  >
+            <br>
+            <label for="legajo">legajo :</label>
+            <input class="estiloImput" type="number" id="legajo" name="legajo" 
+            value="123" readonly >
+            <br>            
+            <input type="hidden" id="dni" name="dni" 
+            value="29031734" >
+            <br>
+            <label for="altura">Altura</label>
+            <input class="estiloImput" id="altura" name="altura" type="number"
+            min="20" max="250">
+            <hr>
+            <input type="date" >
+            <hr>
+            <input type="file" accept="" >
+            <hr>
+            <input type="range" >
+            <hr>
+
+            <h2>Checkbox</h2>
+            <input type="checkbox" name="auto" value="1" >Ford
+            <input type="checkbox" name="auto" value="2" >Renault
+            <input type="checkbox" name="auto" value="3" >Fiat
+
+
+            <h2>RadioButton</h2>
+            <input type="radio" name="auto" value="1" >Ford
+            <input type="radio" name="auto" value="2" >Fiat
+            <input type="radio" name="auto" value="3" >Renault
+
+            <hr>
+            <fieldset>
+                    <legend>Datos Del Alumno</legend>
+                <label for="comision">Comision</label>
+                <input type="text" id="comision">
+                <label for="comentario">comentario</label>
+                <textarea id="comentario" rows="10" cols="40">
+                </textarea>
+            </fieldset>
+
+           <h3>Provincias</h3>
+          
+           <select multiple id="" name="">
+                <option value="1" selected>Cordoba</option>
+                <option value="2">Buenos Aires</option>
+                <option value="3" >Salta</option>
+           </select>
+           <hr>
+           <h4>Autos</h4>
+      <select  id="" name="">
+        <optgroup label="Nacionales">        
+            <option value="1" selected>Ford</option>
+            <option value="2">Fiat</option>
+            <option value="3" >Renault</option>
+        </optgroup>
+        <optgroup label="Importados">        
+            <option value="1" selected>BMW</option>
+            <option value="2">Mercedes</option>
+            <option value="3" >Ferrari</option>
+        </optgroup>
+       </select>
+       <hr>
+       <input type="color">
+
+       <hr>
+
+       <input type="submit" class="" id="" value="Enviar">
+
+            
+
+        </form>
+    
+    </body>
+</html>
