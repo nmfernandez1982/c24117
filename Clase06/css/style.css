@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color : red ;
+}
+
+div
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+#textoAzul
+{
+    color: blue;   
+}
+
+.textoAmarillo
+{
+    color:yellow !important;
+    font-size: 25px;
+}
+
+.textoBold
+{
+    font-weight: 800;
+}
+
