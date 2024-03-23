@@ -1,0 +1,47 @@
+/*asignar variables globales*/
+:root{
+--color-primario:blue;
+--color-secundario:orange;
+--color-terciario:yellow;
+font-size: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body{
+    background-color: var(--color-primario);
+    background-color: yellow;
+    background-color: #D9AFDF;
+    background-color: rgb(208, 23, 234);
+}
+
+div{
+    background-color: var(--color-secundario);
+    width: 400px;
+    height: 400px;
+}
+
+
+h1,h2,h3{
+    color:blue;
+}
+
+
+h1{font-size: 0.5rem;}
+
+h2{font-size: 1rem;}
+
+h3{font-size: 3rem;}
+
+
+p{
+    font-size: 0.5 rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
