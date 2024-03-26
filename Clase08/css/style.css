@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 20px;
+}
+
+#caja1{
+    /*
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    margin: 30px 0px 0px 30px;
+    margin: auto;
+    */
+}
+
+#caja2
+{
+    /* border: 5px solid blue;*/
+    border-top: 50px solid green;
+    border-bottom: 5px dotted blue;
+    border-left: 5px dashed yellow;    
+}
+
+
+#caja3{
+    padding-left: 50px;
+    padding-top: 150px;    
+}
+
+#caja4{
+    overflow: auto;
+}
