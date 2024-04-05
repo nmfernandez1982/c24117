@@ -1,0 +1,48 @@
+/*
+p:first-child{
+    color: red;
+}
+
+P:last-child{
+    color:green;
+}
+
+p:nth-child(2n)
+{
+    background-color: blue;
+    color: white;
+}
+
+p:nth-child(even)
+{
+    background-color:red;
+    color: white;
+}
+
+p:nth-child(odd)
+{
+    background-color:grey;
+    color: white;
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+
+.cuadrado:hover
+{
+    background-color: aqua;
+}
+
+*/
+
+p::first-letter{color: red;}
+p::first-line{color: blue;}
+
+p::before{content:"®" ;}
+p::after{content: "✔";}
+

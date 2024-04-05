@@ -1,0 +1,29 @@
+/*la coma agrupa selectores*/
+
+/*
+p,.texto,#titulo{
+    color:red;
+}
+*/
+
+/*Selector descendiente*/
+
+/*
+div p{
+    color: red;
+}
+*/
+
+
+/*Hijos Directo*/
+
+/*
+div>p{
+    color: red;
+}
+*/
+
+
+div~p{
+    color: red;
+}

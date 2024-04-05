@@ -1,0 +1,50 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 100px;
+    background-color: red;
+    transition: transform 1s ease;
+}
+
+/*
+.caja:hover{
+    transform: translate(20px,50px);
+}
+
+
+.caja:hover{
+    transform: scale(1.5);
+}
+
+
+.caja:hover{
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+*/
+
+@keyframes cambioColor {
+    0%{background-color: red;}
+    25%{background-color: orange;}
+    50%{background-color: lightcoral;}
+    75%{background-color: lightsalmon;}
+    100%{background-color: pink}    
+}
+
+
+.caja:hover{
+   
+    transform: translate(20px,50px) scale(1.5) rotate(45deg);
+    animation: cambioColor 10s infinite;
+    border-radius: 40%;
+}
+
+
+
