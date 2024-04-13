@@ -1,0 +1,63 @@
+.container{
+    width: 80%;
+    background-color: lightcoral;
+    margin: auto;
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;   
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+
+    justify-content: center;
+
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+
+    align-items: end;
+    align-items: start;
+    align-items: center;
+}
+
+
+.sombraRedondeada{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px grey;
+}
+
+.container div
+{
+    background-color: blueviolet;
+    width: 10%;
+    height: 50px;    
+}
+
+div p
+{
+    color: white;
+    text-align: center;
+}
+
+#otro{
+    background-image: linear-gradient(blue,lightblue,violet);
+    align-self: start;
+}
+
+#otro:hover{
+    background-image: none;
+}
+
+
+
+
+
+
+
+.container div:hover{
+    cursor: pointer;
+    background-color: lightblue;    
+}
