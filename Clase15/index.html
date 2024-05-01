@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <script>
+            var opc=2;
+
+            opc=prompt("Ingrese un valor");
+
+            //opc=Number(opc);
+            opc=parseInt(opc);
+
+            switch(opc)
+            {
+                case 1:
+                     console.log("Tomo el valor 1");
+                     break;
+                case 2: 
+                     console.log("Tomo el valor 2");
+                     break;
+                case 3:
+                     console.log("Tomo el valor 3");
+                     break;
+                case 4: 
+                     console.log("Tomo el valor 4");
+                     break;
+                default: 
+                     console.log("Tomo otro valor");
+                     break;
+            }
+
+            alert("Leer con atencion....");
+
+
+            //iteraciones.
+
+            var x=10000;
+
+            //al menos se va a ejecutar 1 vez.
+            do{
+                //codigo que se va a repetir
+                console.log("El valor de la x es:"+x);
+                //x=x+1;
+                x++;                                
+            }while(x<10);
+
+
+            x=10000;
+            //while podria no ejecutarse nunca.
+            while(x<10)
+            {
+                console.log("El valor de la x(while) es:"+x);
+                x++;
+            }
+
+
+            //for
+
+            var datos=[2,23,11111,1,"Nicolas",1,true,2,false,7,null,undefined,9,"Hola Mundo...."];
+
+            console.log(datos);
+
+            console.log(datos[2]);
+
+            console.log(datos[5]);
+
+            console.log(datos[6]+datos[9]);
+
+           for(x=0;x<datos.length;x++)
+           {
+            console.log("EL valor del array: "+datos[x]);
+           }
+
+           //foreach
+           datos.forEach
+           (
+             datos=>{console.log("valor:"+datos)}
+            );
+
+
+
+
+
+        </script>    
+    </body>
+</html>
