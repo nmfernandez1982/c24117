@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    </head>
+    <body>
+        <div id="user-info">
+            <h1>Datos del usuario</h1>
+        </div>
+
+
+        <script>
+            fetch('https://randomuser.me/api')
+                .then(response=>response.json())
+                .then(data=>{
+                    const usuario=data.results[0];
+                    var nombre=usuario.name.first;
+                    var apellido=usuario.name.last;
+                    var foto=usuario.picture.large;
+
+                    console.log(nombre);
+
+                    //mostrarlo en el navegador
+                    const userInfo=document.getElementById('user-info');
+                    userInfo.innerHTML=`<p><strong>${nombre}</strong></p><br>
+                    <p><strong>${apellido}</strong></p><br>
+                    <img src="${foto}">`
+                })
+
+
+                .catch(error=>{
+                    console.log("pagina no disponible");
+                });
+        </script>
+    </body>
+</html>

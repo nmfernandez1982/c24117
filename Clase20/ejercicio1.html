@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    
+    <body>
+        <h1 id="titulo">Texto Original</h1>
+        <p id="parrafo">Parrafo Original</p>
+
+        <button onclick="cambiarTexto();">Cambiar Estilo</button>
+
+
+        <script>
+            function cambiarTexto()
+            {
+                //guardar el nodo completo
+                var titulo=document.getElementById("titulo");
+                var parrafo=document.getElementById("parrafo");
+
+
+                //cambiar texto de h1 y p
+                titulo.textContent="Este es un titulo Nuevo";
+                parrafo.textContent="Este es un parrafo Nuevo";
+
+                //cambiar estilo
+                titulo.style.color="blue";
+                parrafo.style.fontWeight="bold";
+            }
+        </script>
+    </body>
+
+
+</html>

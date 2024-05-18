@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     </head>
+
+
+<style>
+    .error{color:red;}
+</style>
+
+
+    <body>
+        <h2>Formualario con Validaciones</h2>
+
+        <form id="Miformulario" >
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <span id="nombreError" class="error"></span>
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <script>
+            document.getElementById("Miformulario").addEventListener("submit",function(event)
+            {
+                event.preventDefault();
+                var nombre=document.getElementById("nombre").value;
+                var email=document.getElementById("email").value;
+                var nombreError=document.getElementById("nombreError");
+                var emailError=document.getElementById("emailError");
+                var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                nombreError.textContent="";
+                emailError.textContent="";
+
+                if(nombre.trim()==="")
+                {
+                    nombreError.textContent="No puede estar vacio este campo"; 
+                    return;
+                }
+
+                if(email.trim()==="")
+                {
+                    emailError.textContent="No puede estar vacio este campo"; 
+                    return;
+                }
+
+                if(!regexEmail.test(email))
+                {
+                    emailError.textContent="No cumple con el requisito";
+                    return;
+                }
+
+                alert("EL formulario fue enviado....");
+            });
+        </script>
+    
+    </body>
+</html>
